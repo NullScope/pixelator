@@ -15,7 +15,7 @@ public class PixelatorExecutor extends Thread {
     private int sectionHeight;
     private int[][][] sections;
 
-    public PixelatorExecutor(BufferedImage image, int sections) throws InterruptedException {
+    public PixelatorExecutor(BufferedImage image, int sections) {
        this.image = image;
        this.totalSections = sections;
        this.sections = new int[totalSections][totalSections][3];
